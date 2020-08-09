@@ -15,16 +15,24 @@ export class RecipeNotebookComponent implements OnInit {
       4,
       [],
       [],
-      []
+      [
+        'assets/images/blackbean1.jpg',
+        'assets/images/blackbean2.webp',
+        'assets/images/blackbean3.webp',
+      ]
     ),
     new Recipe(
       '2',
       'Roasted Cauliflower "Rice"',
-      "Cauliflower rice is a great low-calorie dish to have in your arsenal especially if you are eating low-carb. Super low in carbs, yet such a satisfying dish you will forget it's made from a vegetable and not a grain. There are two reasons I opted for roasted riced cauliflower in place of sauteed: 1) more flavor and 2) better texture.",
+      "Cauliflower rice is a great low-calorie dish to have in your arsenal especially if you are eating low-carb. Super low in carbs, yet such a satisfying dish you will forget it's made from a vegetable and not a grain. There are two reasons I opted for roasted riced cauliflower in place of sauteed.",
       4.5,
       [],
       [],
-      []
+      [
+        'assets/images/cauliflower1.jpg',
+        'assets/images/cauliflower2.jpg',
+        'assets/images/cauliflower3.jpg',
+      ]
     ),
   ];
 

@@ -1,11 +1,11 @@
 <div class="recipe-details fade show" *ngIf="isSelected">
-  <h3>{{ recipe.title }}</h3>
+  <h2>{{ recipe.title }}</h2>
   <h6>{{ recipe.description }}</h6>
 </div>
 
 <div class="no-recipe-selected" *ngIf="!isSelected">
-  <h3>
+  <h6>
     You can select a recipe on the left to view it's ingredients and cooking
     steps.
-  </h3>
+  </h6>
 </div>

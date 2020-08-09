@@ -1,4 +1,7 @@
-<div class="recipe-list-item">
-  <h5>{{ recipe.title }}</h5>
-  <p>{{ recipe.description }}</p>
+<div class="recipe-list-item mb-small">
+  <div class="recipe-thumbnail" *ngIf="recipe.picturesUrls.length > 0">
+    <img [src]="recipe.picturesUrls[0]" />
+  </div>
+  <h5 class="recipe-title">{{ recipe.title }}</h5>
+  <p class="recipe-description">{{ recipe.description }}</p>
 </div>

@@ -23,3 +23,7 @@
     100% - 2 * #{$grid-margin} - 2 * #{$grid-padding} - 3 * #{$grid-gap}
   );
 }
+
+.notebook-layout > div {
+  padding: $grid-padding;
+}

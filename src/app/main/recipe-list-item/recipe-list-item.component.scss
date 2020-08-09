@@ -1,0 +1,19 @@
+.recipe-list-item {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  cursor: pointer;
+
+  .recipe-thumbnail {
+    grid-column: 1 / 2;
+  }
+
+  .recipe-title {
+    grid-column: 2 / 4;
+  }
+
+  .recipe-description {
+    grid-column: 1 / 4;
+  }
+}
