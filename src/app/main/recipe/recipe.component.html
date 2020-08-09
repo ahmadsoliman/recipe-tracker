@@ -1,1 +1,11 @@
-<p>recipe works!</p>
+<div class="recipe-details" *ngIf="isSelected">
+  <h3>{{ recipe.title }}</h3>
+  <h6>{{ recipe.description }}</h6>
+</div>
+
+<div class="no-recipe-selected" *ngIf="!isSelected">
+  <h3>
+    You can select a recipe on the left to view it's ingredients and cooking
+    steps.
+  </h3>
+</div>

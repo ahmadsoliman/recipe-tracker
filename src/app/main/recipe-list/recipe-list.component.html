@@ -1,1 +1,10 @@
-<p>recipe-list works!</p>
+<div class="recipes-filter"></div>
+
+<div class="recipes-list">
+  <div *ngFor="let recipe of recipes">
+    <app-recipe-list-item
+      (click)="selectRecipe(recipe)"
+      [recipe]="recipe"
+    ></app-recipe-list-item>
+  </div>
+</div>

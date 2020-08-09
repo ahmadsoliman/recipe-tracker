@@ -2,12 +2,12 @@
   <div class="header">
     <app-header></app-header>
   </div>
-  
+
   <div class="sidebar">
-    <app-recipe-list></app-recipe-list>
+    <app-recipe-list (recipeSelected)="selectRecipe($event)"></app-recipe-list>
   </div>
-  
+
   <div class="main-panel">
-    <app-recipe></app-recipe>
+    <app-recipe [recipe]="selectedRecipe"></app-recipe>
   </div>
 </div>
