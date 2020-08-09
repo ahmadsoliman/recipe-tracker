@@ -1,5 +1,6 @@
 export class Recipe {
   public constructor(
+    public recipeId: string,
     public title: string,
     public description: string,
     public rating: number,
@@ -8,6 +9,6 @@ export class Recipe {
     public picturesUrls: string[]
   ) {}
   public static createNew(): Recipe {
-    return new Recipe('', '', 0, [], [], []);
+    return new Recipe('', '', '', 5, [], [], []);
   }
 }

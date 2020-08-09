@@ -1,10 +1,13 @@
 <div class="notebook-layout">
   <div class="header">
-    <app-header></app-header>
+    <app-header (recipeSaved)="saveRecipe($event)"></app-header>
   </div>
 
   <div class="sidebar">
-    <app-recipe-list (recipeSelected)="selectRecipe($event)"></app-recipe-list>
+    <app-recipe-list
+      [recipes]="recipes"
+      (recipeSelected)="selectRecipe($event)"
+    ></app-recipe-list>
   </div>
 
   <div class="main-panel">

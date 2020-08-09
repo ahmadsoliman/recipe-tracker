@@ -1,5 +1,13 @@
 <h1 class="float-left">Welcome to your Recipe Book</h1>
 
-<button class="btn btn-primary float-right mr-large mt-xsmall">
+<button
+  class="btn btn-primary float-right mr-small mt-xsmall"
+  (click)="newRecipeModal.openModal()"
+>
   Create a new Recipe
 </button>
+
+<app-new-recipe-modal
+  #newRecipeModal
+  (saveClicked)="saveRecipe($event)"
+></app-new-recipe-modal>

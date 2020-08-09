@@ -19,5 +19,7 @@
   grid-gap: $grid-gap;
   padding: $grid-padding;
   margin: $grid-margin;
-  max-width: calc(100% - 2 * #{$grid-margin} - 2 * #{$grid-padding} - #{$grid-gap});
+  max-width: calc(
+    100% - 2 * #{$grid-margin} - 2 * #{$grid-padding} - 3 * #{$grid-gap}
+  );
 }

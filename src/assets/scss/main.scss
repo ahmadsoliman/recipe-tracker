@@ -13,6 +13,7 @@
 @import "settings/settings.buttons";
 @import "settings/settings.inputs";
 @import "settings/settings.modals";
+@import "settings/settings.navbar";
 
 // BASE
 @import "base/base.global";
@@ -23,6 +24,7 @@
 @import "components/components.buttons";
 @import "components/components.inputs";
 @import "components/components.modal";
+@import "components/components.side-panel";
 
 // UTILITIES
 @import "utilities/utilities.typography";

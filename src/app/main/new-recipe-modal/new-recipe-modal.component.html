@@ -1,0 +1,59 @@
+<div class="mask" [ngClass]="{ open: opened }" (click)="closeModal()"></div>
+
+<div
+  class="side-panel right-panel side-panel--wide side-panel--has-footer"
+  [ngClass]="{ open: opened }"
+  id="panel-note-container"
+>
+  <div class="side-panel-header">
+    <h3 class="side-panel-header__title">
+      New Recipe
+    </h3>
+
+    <span
+      class="side-panel-header__close close-panel-btn"
+      (click)="closeModal()"
+    >
+      <i class="fa fa-close"></i>
+    </span>
+  </div>
+  <div class="side-panel-body">
+    <div>
+      <form [formGroup]="form">
+        <div class="field mb-small">
+          <label class="field__label" for="title">Title</label>
+          <input
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Recipe Title"
+            formControlName="title"
+          />
+        </div>
+        <div class="field mb-small">
+          <label class="field__label" for="description">Description</label>
+
+          <textarea
+            class="input"
+            id="description"
+            rows="5"
+            formControlName="description"
+            placeholder="Recipe Description"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="side-panel-footer">
+    <button (click)="closeModal()" class="btn btn--secondary close-panel-btn">
+      Cancel
+    </button>
+    <button
+      class="btn btn--success show-content-btn"
+      [disabled]="!form.valid"
+      (click)="save()"
+    >
+      Create Recipe
+    </button>
+  </div>
+</div>
