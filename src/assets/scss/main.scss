@@ -1,9 +1,5 @@
 // SETTINGS
 
-// Global Settings
-@import "settings/settings.global";
-@import "settings/settings.scrollbar";
-
 // Tools
 @import "tools/tools.clearfix";
 @import "tools/tools.linear-gradient";
@@ -11,9 +7,32 @@
 @import "tools/tools.respond-to";
 @import "tools/tools.scrollbar";
 
+// Settings
+@import "settings/settings.global";
+@import "settings/settings.scrollbar";
+@import "settings/settings.buttons";
+@import "settings/settings.inputs";
+@import "settings/settings.modals";
+
 // BASE
 @import "base/base.global";
 @import "base/base.typography";
 
 // Components
 @import "components/components.layout";
+@import "components/components.buttons";
+@import "components/components.inputs";
+@import "components/components.modal";
+
+// UTILITIES
+@import "utilities/utilities.typography";
+@import "utilities/utilities.floats";
+@import "utilities/utilities.clearfix";
+@import "utilities/utilities.spacing";
+@import "utilities/utilities.colors";
+@import "utilities/utilities.display";
+@import "utilities/utilities.borders";
+@import "utilities/utilities.opacity";
+@import "utilities/utilities.sizes";
+@import "utilities/utilities.overflow";
+@import "utilities/utilities.bootstrap";
