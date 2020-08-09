@@ -8,6 +8,8 @@
 
 .main-panel {
   grid-area: main-panel;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .notebook-layout {

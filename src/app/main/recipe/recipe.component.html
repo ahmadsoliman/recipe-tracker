@@ -1,7 +1,34 @@
 <div class="recipe-details fade show" *ngIf="isSelected">
   <h2 class="mb-medium">{{ recipe.title }}</h2>
   <app-recipe-images [images]="recipe.picturesUrls"></app-recipe-images>
-  <h6 class="mt-small">{{ recipe.description }}</h6>
+  <h6 class="mt-medium mb-medium">{{ recipe.description }}</h6>
+
+  <ngb-tabset [destroyOnHide]="false">
+    <ngb-tab title="Ingredients">
+      <ng-template ngbTabContent>
+        <ul class="mt-medium">
+          <li
+            class="ml-small mb-small"
+            *ngFor="let ingredient of recipe.ingredients"
+          >
+            {{ ingredient }}
+          </li>
+        </ul>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Instructions">
+      <ng-template ngbTabContent>
+        <ol class="mt-medium">
+          <li
+            class="ml-small mb-small"
+            *ngFor="let instruction of recipe.cookingSteps"
+          >
+            {{ instruction }}
+          </li>
+        </ol>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
 </div>
 
 <div class="no-recipe-selected" *ngIf="!isSelected">
