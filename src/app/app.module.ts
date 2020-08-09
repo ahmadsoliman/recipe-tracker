@@ -11,6 +11,8 @@ import { RecipeComponent } from './main/recipe/recipe.component';
 import { HeaderComponent } from './main/header/header.component';
 import { RecipeListItemComponent } from './main/recipe-list-item/recipe-list-item.component';
 import { NewRecipeModalComponent } from './main/new-recipe-modal/new-recipe-modal.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { RecipeImagesComponent } from './main/recipe-images/recipe-images.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { NewRecipeModalComponent } from './main/new-recipe-modal/new-recipe-moda
     HeaderComponent,
     RecipeListItemComponent,
     NewRecipeModalComponent,
+    RecipeImagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { NewRecipeModalComponent } from './main/new-recipe-modal/new-recipe-moda
     CoreModule,
     FormsModule,
     ReactiveFormsModule,
+    NgbCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

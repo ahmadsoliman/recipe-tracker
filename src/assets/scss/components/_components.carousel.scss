@@ -1,0 +1,11 @@
+.img-wrapper {
+  height: $carousel-image-height;
+  background: $grey-300;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: $carousel-image-height;
+  }
+}
